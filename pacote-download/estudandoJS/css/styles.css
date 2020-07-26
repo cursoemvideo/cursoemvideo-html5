@@ -9,6 +9,9 @@ hgroup#tituloPrincipal{
     margin-bottom: 50px;
     border-bottom:solid 1px #ffffff;
 }
+strong{
+    color:red;
+}
 code {
     font-family: monospace;
   }
