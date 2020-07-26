@@ -1,40 +1,39 @@
-// Trabalhando com condições multiplas (switch - case)
-// Para a criação de um swith é obrigatorio a criação de um break em cada expressão case
+//Parte interativa do Relogio Animado
+function hora(){
+var hRelogio = new Date()
+var idHora   = hRelogio.getHours()
+var idMinuto = hRelogio.getMinutes()
+var txtHora  = document.getElementById('textoHora')
+var imgHora  = document.querySelector("img#imgHora")
+var bgHora   = document.querySelector("div.interface")
 
-var agora  = new Date()
-var diaSem = agora.getDay()
-
-switch(diaSem){
-    case 0:
-        console.log(`Hoje é domingo`)
-        break
-
-    case 1:
-        console.log(`Hoje é Segunda-Feira`)
-        break
-
-    case 2:
-        console.log(`Hoje é Terça-Feira`)
-        break
-
-    case 3:
-        console.log(`Hoje é Quarta-Feira`)
-        break
-
-    case 4:
-        console.log(`Hoje é Quinta-Feira`)
-        break
-
-    case 5:
-        console.log(`Hoje é Sexta-Feira`)
-        break
-
-    case 6:
-        console.log(`Hoje é Sabádo`)
-        break
-
-    default:
-        console.log(`[ERRO] Dia da semana desconhecido`)
-        break
+if(idHora < 6){
+    console.log(`Boa madrugada agora são exatamente: ${idHora}:${idMinuto}h`)
+    //boa madrugada
+    txtHora.innerHTML = `Boa madrugada agora são exatamente: ${idHora}:${idMinuto}h`
+    imgHora.src = "imagens/compactadas/madrugada-min.png"
+    bgHora.style.background = "#00061c"
+} else if(idHora < 12){
+    console.log(`Bom dia agora são exatamente: ${idHora}:${idMinuto}`)
+    //bom dia
+    txtHora.innerHTML = `Bom dia agora são exatamente: ${idHora}:${idMinuto}h`
+    imgHora.src = "imagens/compactadas/dia-min.png"
+    bgHora.style.background = "rgb(218, 238, 242)"
+} else if(idHora < 16){
+    console.log(`Boa tarde agora são exatamente: ${idHora}:${idMinuto}`)
+    //boa tarde
+    txtHora.innerHTML = `Boa tarde agora são exatamente: ${idHora}:${idMinuto}h`
+    imgHora.src = "imagens/compactadas/tarde-min.png"
+    bgHora.style.background = "rgb(192, 82, 10)"
+} else if(idHora < 24){
+    console.log(`Boa noite agora são exatamente: ${idHora}:${idMinuto}`)
+    //Boa noite
+    txtHora.innerHTML = `Boa noite agora são exatamente: ${idHora}:${idMinuto}h`
+    imgHora.src = "imagens/compactadas/noite_-min.png"
+    bgHora.style.background = "rgb(11, 53, 61)"
+} else{
+    txtHora.innerHTML = `[ERRO: ${idHora}] Desculpe, não conseguimos identificar a hora correta :(`
+    console.log(`[ERRO: ${idHora}] Hora desconhecida`)
+}
 
 }
