@@ -1,10 +1,10 @@
-var idade =18
-console.log(`Você tem ${idade}`)
-if(idade < 16 ){
-    console.log('----------- Não vota ---------------')
-} else if( idade < 18 || idade >= 70){
-        console.log('******* Voto opicional ***********')
-    
+// Verificador de horas
+var hora = 19
+console.log(`Agora são exatamente ${hora}:00 horas.`)
+if(hora < 12){
+    console.log(`Dia`)
+} else if(hora <= 16){
+    console.log(`Tarde`)
 } else {
-    console.log('************* Voto Obrigatório ***********')
+    console.log(`Noite`)
 }
