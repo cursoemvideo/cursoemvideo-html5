@@ -11,12 +11,28 @@
     <hgroup id="tituloPrincipal">
     <h1>Verificador de Nacionalidade</h1>
     </hgroup>
-    <input type="text" class="campo" number="pais" id="pais" placeholder="Informe seu pais de origem">
+    <input type="text" class="campo" name="pais" id="pais" placeholder="Informe seu pais de origem">
     <input type="button" onclick="identificaNacionalidade()" value="Verificar">
     <div id="res"></div> 
 
     <code>
+        <pre>
+        function identificaNacionalidade(){
+            var txtNasc   = document.querySelector('input#pais').value
+            var resCampo = document.getElementById('res')
+            console.log(`Seu pais é ${txtNasc}`)
+            resCampo.innerHTML = 'Estamos verificando sua nacionalidade....'
+            if(txtNasc == 'Brasil'){
+                resCampo.innerHTML += `<br>Seu pais de origem é o ${txtNasc} e você é <strong>Brasileiro!</strong><br>`
+            } else {
+                resCampo.innerHTML += `<br>Seu pais de origem é ${txtNasc} e você é <strong>Estrangeiro</strong><br>`
+            }
         
+            console.log(`Muito Obrigado por utilizar o`)
+            console.log(`**************** verificador de nacionalidade ***************`)
+            resCampo += `****************Muito Obrigado por utilizar o verificador de nacionalidade***************`
+        }
+    </pre>
     </code>
 
     <a href="index.html">Verificador de Velocidade</a>   
