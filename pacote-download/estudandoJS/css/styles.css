@@ -1,4 +1,8 @@
 body{
+<<<<<<< Updated upstream
+=======
+    font-family: Arial, Helvetica, sans-serif;
+>>>>>>> Stashed changes
     background-color: dimgray;
     color: lightcyan;
 }
@@ -8,6 +12,7 @@ hgroup#tituloPrincipal{
     margin-bottom: 50px;
     border-bottom:solid 1px #ffffff;
 }
+<<<<<<< Updated upstream
 
 input{
     font-size:16pt;
@@ -16,6 +21,25 @@ input{
 
 input.campo{
     width:350px;
+=======
+code {
+    font-family: monospace;
+  }
+div#res{
+    padding-top:10px;
+    border-top: solid 1px #ffffff;
+    color: blue;
+    font: 15pt Arial, sans-serif;
+}
+input{
+    font-family: 'Courier New' ;
+    font-size:16pt;
+    border-radius:5px;
+    margin-bottom:50px;
+}
+input.campo{
+    width:60%;
+>>>>>>> Stashed changes
     border: solid 1px;
     box-shadow: 2px 2px 3px 2px #ffffff;
     margin-right:10px;
