@@ -1,9 +1,4 @@
-var pais = 'Brasi'
-console.log(`Vivendo em ${pais}`)
-if(pais == 'Brasil')// Trabalhando com condições compostas 'if else'
-{
-    console.log('Você é um Brasileiro')
-} else {
-    console.log('Você é um Estrangeiro')
-}
-
+var txtV = document.querySelelct('input#txtVel')
+var resD = document.getElementById('res')
+var vel  = Number(txtV.value)
+res.innerHTML = `Sua velocidade é de ${vel}`
