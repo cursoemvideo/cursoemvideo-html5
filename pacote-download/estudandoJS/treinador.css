@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:5px;
+    padding:0px;
+    color:#ffffff;
+    
+}
+.interface{
+    position: absolute;
+    width:100%;
+    margin: auto;
+    border-radius:50px;
+    background-color: DeepSkyBlue;
+}
+header h1{
+    text-align:center;
+   
+
+}
+section{
+    position: relative;
+    width:500px;
+    padding:15px;
+    margin:auto;
+    border-radius:15px;
+    background-color:#ffffff;
+    color:#000000;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.452);
+}
+
+footer{
+    position:relative;
+    text-align: center;
+    margin-top: 50px;
+    font-weight:550;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:10pt;
+    font-style: italic;
+}
