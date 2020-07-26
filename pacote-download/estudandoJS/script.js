@@ -1,4 +1,3 @@
-
 function calcular(){
 var txtV = document.querySelector("input#txtVel")
 var resD = document.getElementById("res")
