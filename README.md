@@ -7,4 +7,4 @@ DATA INICIO | LINGUAGEM |
 ------------|-----------|
 26-07-2020  | JavaScript|
 
-<img src="pacote-download/estudandoJS/imagens/js.png" width="48"/>
+<img src="pacote-download/estudandoJS/imagens/js.png" width="100px"/>
