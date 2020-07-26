@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    color: lightcyan;
+}
+hgroup#tituloPrincipal{
+    width:100%;
+    height: 50px;
+    margin-bottom: 50px;
+    border-bottom:solid 1px #ffffff;
+}
+code {
+    font-family: monospace;
+  }
+div#res{
+    padding-top:10px;
+    border-top: solid 1px #ffffff;
+    color: blue;
+    font: 15pt Arial, sans-serif;
+}
+input{
+    font-family: 'Courier New' ;
+    font-size:16pt;
+    border-radius:5px;
+    margin-bottom:50px;
+}
+input.campo{
+    width:60%;
+    border: solid 1px;
+    box-shadow: 2px 2px 3px 2px #ffffff;
+    margin-right:10px;
+    
+}

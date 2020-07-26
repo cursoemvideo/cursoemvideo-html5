@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="script.js"> </script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>Aprendendo Condições JS</title>
 </head>
 <body>
-    
+    <hgroup id="tituloPrincipal">
+    <h1>Sistema de Multas</h1>
+    </hgroup>
+    <input type="number" class="campo" name="textVel" placeholder="Informe a velocidade do carro" id="txtVel"> Km/h
+    <input type="button" value="verificar" onclick="calcular()">    
+<div id="res">
+</div>
+<code>
+    <pre>
+    function calcular(){
+        var txtV = document.querySelector("input#txtVel")
+        var resD = document.getElementById("res")
+        var vel  = Number(txtV.value)
+        res.innerHTML = `Sua velocidade é de ${vel}`
+        }
+    </pre>
+</code>
 </body>
 </html>
