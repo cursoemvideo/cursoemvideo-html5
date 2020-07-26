@@ -9,3 +9,18 @@ if(vel > 60){
 res.innerHTML +=`Dirigja sempre com cinto de <em>segurança</em>`
 }
 
+function identificaNacionalidade(){
+    var txtNasc   = document.querySelector('input#pais').value
+    var resCampo = document.getElementById('res')
+    console.log(`Seu pais é ${txtNasc}`)
+    resCampo.innerHTML = 'Estamos verificando sua nacionalidade....'
+    if(txtNasc == 'Brasil'){
+        resCampo.innerHTML += `<br>Seu pais de origem é o ${txtNasc} e você é <strong>Brasileiro!</strong><br>`
+    } else {
+        resCampo.innerHTML += `<br>Seu pais de origem é ${txtNasc} e você é <strong>Estrangeiro</strong><br>`
+    }
+
+    console.log(`Muito Obrigado por utilizar o`)
+    console.log(`**************** verificador de nacionalidade ***************`)
+    resCampo += `****************Muito Obrigado por utilizar o verificador de nacionalidade***************`
+}
