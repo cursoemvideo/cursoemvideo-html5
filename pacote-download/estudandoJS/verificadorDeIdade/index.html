@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="txt/css" href="css/style.css" />
-    <script type="txt/javascript" src="js/scripts.js" ></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/scripts.js" ></script>
     <title>Varificador de Idade</title>
 </head>
 <body>
     <div class="interface">
+        
         <header>
             <h1> Verificador de Idade</h1>
         </header>
-        <span>
-            <h3>Vamos Verificar sua idade?</h3>
-            <input placeholder="Informe seu ano de nascimento" name="ano" id="ano" />
+        <section>
+            <h2>Vamos Verificar sua idade?</h2>
+            <input type="text" placeholder="Informe seu ano de nascimento" name="ano" id="ano" />
+           
             <h4>Selecione seu genero:</h4>
-            <input type="radio" name="sexo" id="sexo" value="Masculino" />
-            <input type="radio" name="sexo" id="sexo" value="Feminino" />
-            <input type="buttom" onclick="verificaIdade()" value="Consultar" />
-        </span>
+
+            Masculino:<input type="radio" name="sexo" id="sexo" value="Masculino" />
+            Feminino: <input type="radio" name="sexo" id="sexo" value="Feminino" />
+            <input type="button" onclick="verificaIdade()" value="Consultar" />
+            <h4>Resultado</h4>
+            <img src="" id="imgIdade" alt="Imagem de comparação com idade" />
+        </section>
     </div>
     
 </body>
