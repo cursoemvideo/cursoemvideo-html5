@@ -1,14 +1,40 @@
-// Verificador de horas
-var agora = new Date()
-var hora = agora.getHours()
-var minutos = agora.getMinutes()
-console.log(`Agora são exatamente ${hora}:${minutos} horas.`)
-if(hora < 6){
-    console.log(`Boa Madrugada :)`)
-} else if(hora < 12){
-    console.log(`Bom Dia :|`)
-} else if(hora <= 16){
-    console.log(`Boa Tarde ;)`)
-} else {
-    console.log(`Boa Noite (^_^)`)
+// Trabalhando com condições multiplas (switch - case)
+// Para a criação de um swith é obrigatorio a criação de um break em cada expressão case
+
+var agora  = new Date()
+var diaSem = agora.getDay()
+
+switch(diaSem){
+    case 0:
+        console.log(`Hoje é domingo`)
+        break
+
+    case 1:
+        console.log(`Hoje é Segunda-Feira`)
+        break
+
+    case 2:
+        console.log(`Hoje é Terça-Feira`)
+        break
+
+    case 3:
+        console.log(`Hoje é Quarta-Feira`)
+        break
+
+    case 4:
+        console.log(`Hoje é Quinta-Feira`)
+        break
+
+    case 5:
+        console.log(`Hoje é Sexta-Feira`)
+        break
+
+    case 6:
+        console.log(`Hoje é Sabádo`)
+        break
+
+    default:
+        console.log(`[ERRO] Dia da semana desconhecido`)
+        break
+
 }
