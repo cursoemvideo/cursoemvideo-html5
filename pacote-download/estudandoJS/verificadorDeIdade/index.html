@@ -18,9 +18,10 @@
             <input type="text" placeholder="Informe seu ano de nascimento" name="ano" id="ano" />
            
             <h4>Selecione seu genero:</h4>
-
-            Masculino:<input type="radio" name="sexo" id="sexo" value="Masculino" />
-            Feminino: <input type="radio" name="sexo" id="sexo" value="Feminino" />
+            <fieldset id="genero">
+            Masculino:<input type="radio" name="genero" value="M" />
+            Feminino: <input type="radio" name="genero"  value="F" />
+            </fieldset>
             <input type="button" onclick="verificaIdade()" value="Consultar" />
             <h4 id='res'>Resultado</h4>
             <img src="ima" id="imgIdade" alt="Imagem de comparação com idade" />
