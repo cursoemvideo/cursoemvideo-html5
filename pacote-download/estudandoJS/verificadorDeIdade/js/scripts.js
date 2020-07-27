@@ -8,8 +8,8 @@ function verificaIdade(){
     var imgIdade = document.getElementById('imgIdade')
 
     if(idade < 3){
-        textResp.innerHTML(`Você tem apenas ${idade} de idade como você conseguiu realizar esta consulta?`)
-        imgIdade.src = ''
+        txtResp.innerHTML = `Você tem apenas ${idade} de idade como você conseguiu realizar esta consulta?`
+        imgIdade.src = 'imagens/0_2F.png'
     } else if(idade < 7){
 
     } else if(idade < 11){
