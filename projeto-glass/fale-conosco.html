@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Glass - Fale Conosco</title>
+</head>
+
+<body>
+    <header>
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
+        <img src="./_imagens/glass-logo-peq.jpg" alt="logo glass">
+        <nav>
+
+            <ul>
+                <li>Home</li>
+                <li>Especificações</li>
+                <li>Fotos</li>
+                <li>Multimídia</li>
+                <li>Fale conosco</li>
+            </ul>
+        </nav>
+    </header>
+
+    <bloquote>
+        <h2>Fale Conosco > Contato</h2>
+        <h3>Formulário de Contato</h3>
+        <cite>editado por Sebastian Rodrigues</cite>
+        <footer>Atualizado em 20/Dezembro/2022</footer>
+    </bloquote>
+
+
+    <form action="fale-conosco.html" method="post">
+        <fieldset>
+            <legend>Identificação do Usuário</legend>
+            <label for="name">Nome:</label><input type="text" name="" id="name" placeholder="Nome Completo"><br>
+            <label for="pwd">Senha:</label><input type="password" name="" id="pwd" placeholder="8 dígitos" maxlength="8"
+                autocomplete="off"><br>
+            <hr>
+            <label for="email">E-mail:</label><input type="email" name="" id="email" placeholder="user@email.com"><br>
+            <fieldset>
+
+                <legend>Sexo:</legend>
+                <label for="male">Masculino</label><input type="radio" name="gender" id="male">
+                <label for="female">Feminino</label><input type="radio" name="gender" id="female">
+
+            </fieldset>
+            <label for="birth">Data de Nascimento:</label><input type="date" name="" id="birth">
+        </fieldset>
+        <fieldset>
+            <legend>Endereço do Usuário</legend>
+            <label for="street">Logradouro:</label><input type="text" name="" id="street"
+                placeholder="Rua, Av., Trav...">
+            <label for="number">Número:</label><input type="number" name="" id="number" maxlength="3"><br>
+            <label for="uf">Estado:</label><select name="" id="uf">
+                <option value="rj">RJ</option>
+                <option value="sp">SP</option>
+                <option value="df">DF</option>
+            </select>
+            <label for="city">Cidade:</label><input type="text" name="" id="city" placeholder="Sua Cidade">
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem do Usuário</legend>
+            <label for="urange">Grau de Urgência:</label><input type="range" name="" id="urange" max="4"><br>
+            <label for="msg">Mensagem:</label><br><textarea name="" id="msg" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Quero um Google Glass</legend>
+            <input type="checkbox" name="" id="check-msg"> <label for="check-msg">Gostaria de adquirir um Google Glass quando disponível</label><br>
+            <label for="color-input">Cor:</label><input type="color" name="" id="color-input"><br>
+            <label for="qtd">Quantidade:</label><input type="number" name="" id="qtd" max="10"><br>
+            <label for="prc">Preço Total: R$ </label><input type="text" name="" id="prc" disabled placeholder="Total a Pagar">
+        </fieldset>
+        <input type="submit" value="Salvar" title="formulario">
+    </form>
+
+
+    [BOTÃO ENVIAR]
+    <footer>
+        <cite>Copyright 2013 - by Gustavo Guanabara</cite>
+        <a href="">Facebook</a> | <a href="">Twitter</a>
+    </footer>
+</body>
+
+</html>
