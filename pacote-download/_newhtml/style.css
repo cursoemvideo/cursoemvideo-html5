@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+.jj{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-family: fantasy;
+    font-weight: bold;
+    margin-top: 5%;
+    text-decoration: none;
+    padding: 10px;
+}
